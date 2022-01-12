@@ -1,6 +1,6 @@
 # mixed_messages
 # Random Dad Joke Generator #
-> A random guess will generate a random dad joke and let you know the time too!
+> A random guest will generate a random dad joke and let you know the time too!
 
 ## Table of contents
 * [General info](#general-info)
