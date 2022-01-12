@@ -1,3 +1,8 @@
+const jokeTeller = ['Vault Boy', 'Mickey Mouse', 'Rick James', 'Django'];
+
+let today = new Date();
+let time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+
 const jokesArray = [
     'Which bear is the most condescending? A pan-duh!', 
     'What’s brown and sticky? A stick.', 
@@ -16,7 +21,40 @@ const getRandomNumber = (array) => {
     return Math.floor(Math.random() * array.length);
 };
 
+const joker = jokeTeller[getRandomNumber(jokeTeller)];
 const joke = jokesArray[getRandomNumber(jokesArray)];
 
-console.log(joke);
 
+
+/*
+console.log(time);
+console.log(joker);
+console.log(joke);
+*/
+
+
+const art = `                          __ooooooooo__
+                    oOOOOOOOOOOOOOOOOOOOOOo
+                oOOOOOOOOOOOOOOOOOOOOOOOOOOOOOo
+             oOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOo
+            oOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOo
+          oOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOo
+         oOOOOOOOOOOO*  *OOOOOOOOOOOOOO*  *OOOOOOOOOOOOo
+        oOOOOOOOOOOO      OOOOOOOOOOOO      OOOOOOOOOOOOo
+        oOOOOOOOOOOOOo  oOOOOOOOOOOOOOOo  oOOOOOOOOOOOOOo
+        oOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOo
+        oOOOO     OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO     OOOOo
+        oOOOOOO OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO OOOOOOo
+         *OOOOO  OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO  OOOOO*
+         *OOOOOO  *OOOOOOOOOOOOOOOOOOOOOOOOOOOOO*  OOOOOO*
+           *OOOOOO  *OOOOOOOOOOOOOOOOOOOOOOOOOO*  OOOOOO*
+            *OOOOOOo  *OOOOOOOOOOOOOOOOOOOOOO*  oOOOOOO*
+              *OOOOOOOo  *OOOOOOOOOOOOOOOOO*  oOOOOOOO*
+               *OOOOOOOOo  *OOOOOOOOOOO*  oOOOOOOOO*      
+                  *OOOOOOOOo           oOOOOOOOO*      
+                      *OOOOOOOOOOOOOOOOOOOOO*          
+                          ""ooooooooo""             `
+
+console.log(`It's ${time}, my name is ${joker}! Here is a joke for you: ${joke}`);
+console.log('');
+console.log(art);
